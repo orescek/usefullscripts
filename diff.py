@@ -39,6 +39,7 @@ def print_diff_files(dcmp):
             print "%s : %s file only found in %s" % (dcmp.right, name,dcmp.right )
     #for name in dcmp.same_files:
      #   print "File %s is in both folders (%s and %s)"  % (name,dcmp.right,dcmp.right )
+     #if the same we need to make md5 for just to be sure
     for sub_dcmp in dcmp.subdirs.values():
         print_diff_files(sub_dcmp)
 
